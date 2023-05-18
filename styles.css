@@ -214,7 +214,7 @@
     background-color: #fff;
   }
   
-  .main__container {
+   .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -227,10 +227,10 @@
     max-width: 1300px;
     padding-right: 50px;
     padding-left: 50px;
-  }
+  } 
   
   .main__content {
-    color: #000000;
+    color: #1f1010;
     width: 100%;
   }
   
@@ -306,6 +306,7 @@
   
   .main__img--container  {
  height: 90%;
+ 
   }
 
   .main__img--container #bottom__image {
@@ -319,10 +320,103 @@
   margin-top: 5vh;
   border-radius: 10%;
   }
-   
+
+  /*login page */
+  #main__content_on_login{
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    width: 80%;
+    height: 80vh;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+
+ .main__content img {
+  width: 100%;
+   }
+
+.login__page{
+  /* border-left: 1px solid grey; */
+  padding: 90px 10px;
+  position: relative;
+}
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+  }
+
+  .cancelbtn {
+    width: auto;
+    padding: 7px 16px;
+    background-color: #f44336;
+    color: whitesmoke;
+    border: none;
+    float: left;
+  }
+
+  span.password {
+    float: right;
+    padding-top: 16px;
+  }
+
+  .login__footer{
+    padding: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #f1f1f1;
  
-  
+  }
+
+  button[type="submit"] {
+      background-color: #4837ff;
+      color: white;
+      padding: 14px 20px;
+      margin: 30px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      display:block;
+      position: relative;
+      left: 30%;
+      border-radius: 50px;
+         }
+
+  button[type="submit"]:hover {
+          opacity: 0.8;
+        } 
+   
   /* Mobile Responsive */
+
+  @media screen and (max-width: 960px) {
+    .main__container {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-self: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90vh;
+  }
+
+  #main__content_on_login{
+    height: 100vh;
+  }
+  
+  .login__page{
+    height: 40vh;
+    padding: 0px;
+  } 
+
+
+
+  }
   @media screen and (max-width: 768px) {
     .main__container {
       display: grid;
@@ -352,12 +446,31 @@
       margin-top: 1rem;
       font-size: 1.5rem;
     }
+
+    #main__content_on_login{
+      height: 100vh;
+    }
+
+    .login__page{
+      height: 40vh;
+      padding: 0px;
+    }
+
   }
   
   @media screen and (max-width: 480px) {
+.main__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: vh;
+
+}
+
     .main__content h1 {
       font-size: 2rem;
-      margin-top: 3rem;
+      margin-top: 25rem;
     }
   
     .main__content h2 {
@@ -373,6 +486,21 @@
       padding: 12px 36px;
       margin: 2.5rem 0;
     }
+
+    #main__content_on_login{
+      height: 100vh;
+    }
+    
+    .login__page{
+      height: 60%;
+      padding: 0px;
+    }
+
+    button[type="submit"] {
+      width: 50%;
+      left: 25%;
+    }
+
   }
   
   /* Services Section */
@@ -513,6 +641,19 @@
   
   @media screen and (max-width: 960px) {
     .services {
+      height: 1500px;
+      /* margin-top: 20rem; */
+
+    }
+  
+    .services h1 {
+      font-size: 2rem;
+      /* margin-top: 5rem; */
+    }
+  }
+
+  @media screen and (max-width: 760px){
+    .services {
       height: 1900px;
       margin-top: 20rem;
 
@@ -520,7 +661,7 @@
   
     .services h1 {
       font-size: 2rem;
-      margin-top: 5rem;
+      /* margin-top: 5rem; */
     }
   }
   
