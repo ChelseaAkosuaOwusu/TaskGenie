@@ -210,8 +210,13 @@
   }
   
   /* Main Content CSS */
+  .hero{
+    height: auto;
+  }
+  
   .main {
     background-color: #fff;
+    height: 100%;
   }
   
    .main__container {
@@ -220,7 +225,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100%;
     background-color: #fff;
     z-index: 1;
     width: 100%;
@@ -322,6 +327,12 @@
   }
 
   /*login page */
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
   #main__content_on_login{
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
     width: 80%;
@@ -335,9 +346,9 @@
    }
 
 .login__page{
-  /* border-left: 1px solid grey; */
-  padding: 90px 10px;
+  padding: 10px;
   position: relative;
+  height: fit-content;
 }
 
   input[type=text], input[type=password] {
@@ -366,7 +377,7 @@
 
   .login__footer{
     padding: 13px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -402,7 +413,7 @@
       justify-self: center;
       width: 100%;
       margin: 0 auto;
-      height: 90vh;
+      height: fit-content;
   }
 
   #main__content_on_login{
@@ -417,7 +428,7 @@
 
 
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 760px) {
     .main__container {
       display: grid;
       grid-template-columns: auto;
@@ -425,7 +436,7 @@
       justify-self: center;
       width: 100%;
       margin: 0 auto;
-      height: 90vh;
+      height: 100%;
     }
   
     .main__content {
@@ -464,7 +475,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: vh;
+  height: fit-content;
+ flex-wrap: wrap;
+ font-size: 0.8rem;
+
 
 }
 
@@ -479,12 +493,12 @@
   
     .main__content p {
       margin-top: 2rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   
     .main__btn {
       padding: 12px 36px;
-      margin: 2.5rem 0;
+      margin: 2rem 0;
     }
 
     #main__content_on_login{
@@ -497,9 +511,16 @@
     }
 
     button[type="submit"] {
-      width: 50%;
+      width: 70%;
       left: 25%;
     }
+
+    input[type=text], input[type=password] {
+      padding: 5%;
+      width: 100%;
+    }
+
+
 
   }
   
