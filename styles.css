@@ -430,13 +430,14 @@
   }
   @media screen and (max-width: 760px) {
     .main__container {
-      display: grid;
-      grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-self: center;
-      width: 100%;
-      margin: 0 auto;
       height: 100%;
+     flex-wrap: wrap;
+     font-size: 1rem;
+    
     }
   
     .main__content {
@@ -459,11 +460,11 @@
     }
 
     #main__content_on_login{
-      height: 100vh;
+      height: auto;
     }
 
     .login__page{
-      height: 40vh;
+      height: 50%;
       padding: 0px;
     }
 
