@@ -225,7 +225,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     z-index: 1;
     width: 100%;
@@ -331,6 +331,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
   #main__content_on_login{
@@ -341,11 +342,28 @@
     margin-bottom: 10px;  
   }
 
+  #main__content_on_signup {
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    width: 80%;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+
+
+
+
  .main__content img {
   width: 100%;
    }
 
 .login__page{
+  padding: 10px;
+  position: relative;
+  height: fit-content;
+}
+
+.signup__page{
   padding: 10px;
   position: relative;
   height: fit-content;
@@ -382,6 +400,7 @@
     left: 0;
     width: 100%;
     border-top: 2px solid #f1f1f1;
+    
  
   }
 
@@ -402,6 +421,16 @@
   button[type="submit"]:hover {
           opacity: 0.8;
         } 
+
+   .signup__container {
+          margin: 1rem;
+          height: 250px;
+          width: 300px;
+          border-radius: 4px;
+          background-size: cover;
+          position: relative;
+          color: #fff;
+        }
    
   /* Mobile Responsive */
 
@@ -419,6 +448,10 @@
   #main__content_on_login{
     height: 100vh;
   }
+
+  #main__content_on_signup{
+    height: 1500px;
+  }
   
   .login__page{
     height: 40vh;
@@ -428,7 +461,7 @@
 
 
   }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 770px) {
     .main__container {
       display: flex;
       flex-direction: column;
@@ -443,6 +476,7 @@
     .main__content {
       text-align: center;
       margin-bottom: 4rem;
+      margin-top: 1rem;
     }
   
     .main__content h1 {
@@ -463,6 +497,10 @@
       height: auto;
     }
 
+    #main__content_on_signup{
+      height: auto;
+    }
+
     .login__page{
       height: 50%;
       padding: 0px;
@@ -476,9 +514,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  height: 100vh;
  flex-wrap: wrap;
- font-size: 0.8rem;
+ font-size: 0.75rem;
 
 
 }
@@ -502,10 +540,20 @@
       margin: 2rem 0;
     }
 
+    .main__content {
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  
+
     #main__content_on_login{
       height: 100vh;
     }
-    
+      #main__content_on_signup{
+      height: auto;
+    }
+
     .login__page{
       height: 60%;
       padding: 0px;
@@ -521,10 +569,76 @@
       width: 100%;
     }
 
-
+  
 
   }
   
+  @media screen and (max-width: 300px) {
+    .main__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     flex-wrap: wrap;
+     font-size: 0.6rem;
+    
+    
+    }
+    
+        .main__content h1 {
+          font-size: 2rem;
+          margin-top: 25rem;
+        }
+      
+        .main__content h2 {
+          font-size: 2rem;
+        }
+      
+        .main__content p {
+          margin-top: 2rem;
+          font-size: 1rem;
+        }
+      
+        .main__btn {
+          padding: 12px 36px;
+          margin: 2rem 0;
+        }
+    
+        .main__content {
+          text-align: center;
+          margin-bottom: 4rem;
+          margin-top: 1.2rem;
+        }
+      
+    
+        #main__content_on_login{
+          height: 100vh;
+        }
+          #main__content_on_signup{
+          height: auto;
+        }
+    
+        .login__page{
+          height: 60%;
+          padding: 0px;
+        }
+    
+        button[type="submit"] {
+          width: 70%;
+          left: 20%;
+        }
+    
+        input[type=text], input[type=password] {
+          padding: 5%;
+          width: 100%;
+        }
+    
+    
+      }
+      
+
+
   /* Services Section */
   .services {
     background: white;
@@ -701,6 +815,7 @@
     .services__card {
       width: 300px;
     }
+  
   }
   
   /* Footer CSS */
