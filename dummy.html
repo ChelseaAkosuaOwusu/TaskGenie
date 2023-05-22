@@ -40,49 +40,14 @@
     <!-- Hero Section -->
     <div class="hero">
     <div class="main">
-      
-          <!-- Login Section -->
-      <div class="main__container" id="main__content_on_login">
+      <div class="main__container" id="main__content_on_signup">
         <div class="main__content" >
-                 <img src="images/vector_login.webp">
-        </div>
-
-    <div class="login__page" id="login">
-      <form class="modal-content animate" action="/action_page.php" method="post" >
-    
-        <div class="login__container">
-          <label for="uname"><b>Username / Email</b></label>
-          <input type="text" placeholder="Enter Username or Email" name="uname" required>
-    
-          <label for="password"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="password" required>
-            
-          <button type="submit">Login</button>
-          <span class="password">Forgot <a href="#">password?</a></span>
-
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-    
-        <div class="login__footer" >
-          <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-        </div>
-        <p>Don't have an account already? <a id="signup__link" style= "color: blue; text-decoration: underline;"> Sign up</a></p>
-
-      </form>    
+          <img src="images/vector_signup.webp">
     </div>
-      </div>
 
-
-        <!-- signup section-->
-        <div class="main__container" id="main__content_on_signup" style="display: none" >
-          <div class="main__content" >
-            <img src="images/vector_signup.webp">
-      </div>
-
+          <!-- Signup Section -->
     <div class="login__page" id="signup">
-      <form class="modal-content animate" action="/action_page.php" method="post">
+      <form action="/action_page.php" method="post">
            
         <div class="login__container">
           <label for="uname"><b>Email</b></label>
@@ -103,15 +68,19 @@
     
         <div class="login__footer" >
           <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="password">Already have an account? <a id="login__link" style= "color: blue; text-decoration: underline;">Login</a></span>
+          <span class="password">Already have an account? <a href="login.html">Login</a></span>
         </div>
 
       </form>    
     </div>
-        </div>
+
+  
+
       </div>
     </div>
     
+    
+    </div>
     
     <!-- Footer Section -->
     <div class="footer__container">
