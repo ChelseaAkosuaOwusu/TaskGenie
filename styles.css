@@ -838,19 +838,12 @@
       height: 1500px;
     }
 
-    .reviews {
-      height: 1500px;
-
-    }
+   
   
     .services h1 {
       font-size: 2rem;
     }
 
-    .reviews h1 {
-      font-size: 2rem;
-
-    }
   }
 
   @media screen and (max-width: 760px){
@@ -859,18 +852,12 @@
       margin-top: 20rem;
     }
 
-    .reviews {
-      height: 1900px;
-      margin-top: 20rem;
-    }
   
     .services h1 {
       font-size: 2rem;
     }
 
-    .reviews h1 {
-      font-size: 2rem;
-    }
+   
   }
   
   @media screen and (max-width: 480px) {
@@ -879,20 +866,12 @@
       margin-top: 30rem;
     }
   
-    .reviews {
-      height: 1900px;
-      margin-top: 30rem;
-    }
-
+   
     .services h1 {
       font-size: 1.2rem;
        }
 
-       .reviews h1 {
-        font-size: 1.2rem;
-     
-      }
-  
+      
     .services__card {
       width: 300px;
     }
